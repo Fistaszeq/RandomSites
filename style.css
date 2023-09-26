@@ -1,0 +1,84 @@
+
+.box {
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
+    background-color: #f0f0f0; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;    
+    justify-content: center; /* Centrowanie poziome */
+    align-items: center; /* Centrowanie pionowe */
+   
+    text-align:justify;
+}
+.text {
+    font-size: 18px; /* Rozmiar tekstu */
+    color: #333; /* Kolor tekstu */
+}
+
+
+.image {
+    max-width: 100%; /* Ogranicza szerokość obrazka do szerokości diva */
+    border-radius: 10px; /* Zaokrąglenie narożników obrazka */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Lekki cień pod obrazkiem */
+    transition: transform 0.2s ease-in-out; /* Efekt przekształcania obrazka */
+    display: block;
+}
+
+/* Efekt po najechaniu myszką na obrazek */
+.image:hover {
+    transform: scale(1.1); /* Powiększenie obrazka */
+}
+
+.title {
+    font-size: 36px; /* Rozmiar tekstu tytułu */
+    font-weight: bold; /* Pogrubienie tekstu tytułu */
+    color: #333; /* Kolor tekstu tytułu */
+    margin-bottom: 20px; /* Odstęp od dołu tytułu */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Dostosowanie rozmiaru diva na mniejszych ekranach */
+    .box {
+        padding: 10px;
+        width: 90%;
+    }
+
+    /* Dostosowanie rozmiaru obrazka na mniejszych ekranach */
+    .image {
+        max-width: 80%; /* Obrazek zajmie mniej miejsca na małych ekranach */
+    }
+
+    /* Dostosowanie marginesu dla lepszego wyświetlania na małych ekranach */
+    .title {
+        font-size: 18px; /* Mniejszy rozmiar tekstu tytułu na małych ekranach */
+        margin-bottom: 10px; /* Mniejszy odstęp od dołu */
+    }
+
+    html {
+        padding: 0;
+        margin: 0;
+    }
+}
+   /* Stylowanie przycisku */
+   .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efekt po najechaniu myszką na przycisk */
+.button:hover {
+    background-color: #0056b3;
+}
