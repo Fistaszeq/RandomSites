@@ -2,17 +2,15 @@ var box = document.getElementById("box");
 
 var x = 1;
 function generujLosowaLiczbe() {
-    // var x =  Math.floor(Math.random() * (10));
-
-
+    
+    if (x%2 == 1) 
+    {
+    box.innerHTML = "<h1 class='title'>Tworzenie zmiennych w c++.</h1><p class='text'>&nbsp;W programowaniu zmienne to takie 'pudełka', w których możesz trzymać różne informacje. Możesz myśleć o nich jak o pojemnikach na dane. Te dane mogą być liczbami, tekstem, prawdą lub fałszem, albo czymkolwiek, czego potrzebujesz w swoim programie. W C++ mamy różne typy zmiennych, które mówią nam, jakiego rodzaju dane mogą być przechowywane w danym 'pudełku'. Oto kilka przykładów typów zmiennych w C++:<br><br><strong>int</strong>: To typ zmiennych używany do przechowywania liczb całkowitych. Na przykład:</p><center><img class='image' src='codecppp.png' alt='Some code'></center><p class='text'><strong>double</strong>: Ten typ jest używany do przechowywania liczb zmiennoprzecinkowych, czyli tych z kropką dziesiętną. Na przykład:</p><center><img class='image' src='doublecode.png' alt='Some code'></center><p class='text'><strong>string</strong>: To typ służy do przechowywania tekstów. Przykład:</p><center><img class='image' src='codeJan.png' alt='Some code'></center>   <p class='text'><strong>bool</strong>: Ten typ ma tylko dwie możliwe wartości: prawda (true) lub fałsz (false). To świetne do przechowywania informacji logicznych. Na przykład:</p><center><img class='image' src='boolcode.png' alt='Some code'></center>  <p class='text'><strong>char</strong>: Ten typ służy do przechowywania pojedynczych znaków. Na przykład:</p><center><img class='image' src='acode.png' alt='Some code'></center>  <p class='text'>Teraz, kiedy masz te 'pudełka' o różnych kształtach, możesz w nich trzymać różne rodzaje danych w zależności od potrzeb twojego programu. Dlatego zmienne są tak ważne w programowaniu - pozwalają nam przechowywać, manipulować i używać danych w naszych programach.</p>";
+    }
+    else if (x%2 == 0) 
+    {
+    box.innerHTML = " <h1 class='title'>Tworzenie klas w c++.</h1><p class='text'> Okej, no więc w C++ tworzenie klas to taki sposób, żebyś mógł stworzyć swoje własne typy danych, czyli takie, jak int, double czy string, ale dostosowane do twoich potrzeb. Klasy pomagają w porządkowaniu kodu i umożliwiają tworzenie obiektów, które zachowują się jak te znanego typu. Wiesz, klasa to taki plan, projekt albo szablon, który mówi, jak ma wyglądać obiekt danej klasy. Wewnątrz klasy możesz określić, jakie dane (nazywane 'pola') i jakie funkcje (nazywane 'metodami') ma mieć twój obiekt. Na przykład, jeśli chciałbyś stworzyć klasę reprezentującą samochód, to byś wewnątrz klasy dodał takie rzeczy jak kolor, markę, rok produkcji jako pola. Potem możesz dodać metody, które pozwolą ci ustawiać te wartości lub je wypisywać. Teraz, kiedy masz już zdefiniowaną klasę, możesz tworzyć obiekty na jej podstawie. To jest jak tworzenie konkretnego samochodu na podstawie projektu. Tworzenie obiektu wygląda mniej więcej tak:    </p><center><img class='image' src='code.png' alt='Some code'></center> <p class='text'> Teraz masz swój własny samochód w kodzie, który jest reprezentowany przez obiekt klasy Samochod. Możesz używać metod, żeby zmieniać jego właściwości albo coś z nim robić. Klasy to super narzędzie w C++, które pomaga w organizowaniu kodu i pozwala tworzyć obiekty, które odzwierciedlają rzeczywiste obiekty z rzeczywistego świata.</p>";
+    }
 
     x = x + 1;
-    if (x%2 == 1) {
-        box.innerHTML = "Kolejna Strona";
-    }
-    else if (x%2 == 0) {
-        box.innerHTML = " <h1 class='title'>Tworzenie klas w c++.</h1><p class='text'> Okej, no więc w C++ tworzenie klas to taki sposób, żebyś mógł stworzyć swoje własne typy danych, czyli takie, jak int, double czy string, ale dostosowane do twoich potrzeb. Klasy pomagają w porządkowaniu kodu i umożliwiają tworzenie obiektów, które zachowują się jak te znanego typu. Wiesz, klasa to taki plan, projekt albo szablon, który mówi, jak ma wyglądać obiekt danej klasy. Wewnątrz klasy możesz określić, jakie dane (nazywane 'pola') i jakie funkcje (nazywane 'metodami') ma mieć twój obiekt. Na przykład, jeśli chciałbyś stworzyć klasę reprezentującą samochód, to byś wewnątrz klasy dodał takie rzeczy jak kolor, markę, rok produkcji jako pola. Potem możesz dodać metody, które pozwolą ci ustawiać te wartości lub je wypisywać. Teraz, kiedy masz już zdefiniowaną klasę, możesz tworzyć obiekty na jej podstawie. To jest jak tworzenie konkretnego samochodu na podstawie projektu. Tworzenie obiektu wygląda mniej więcej tak:    </p><center><img class='image' src='code.png' alt='Some code'></center> <p class='text'> Teraz masz swój własny samochód w kodzie, który jest reprezentowany przez obiekt klasy Samochod. Możesz używać metod, żeby zmieniać jego właściwości albo coś z nim robić. Klasy to super narzędzie w C++, które pomaga w organizowaniu kodu i pozwala tworzyć obiekty, które odzwierciedlają rzeczywiste obiekty z rzeczywistego świata.</p>";
-    }
-
 }
-
